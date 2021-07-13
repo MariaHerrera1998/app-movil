@@ -1,16 +1,46 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>inicio</ion-title>
+    <ion-title>Inicio</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-button routerLink='/alerts' color="warning" expand="block" >
-    <ion-icon name="alert-circle-outline"></ion-icon>
-    Alerts
-  </ion-button>
-  <ion-button routerLink='/action-sheets' color="success" expand="block">
-    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-    Action Sheets
-  </ion-button>
+<ion-content >
+  <section>
+    <ion-button routerLink='/store' color="success" expand="block" slot="start">
+      <ion-icon name="storefront-outline"></ion-icon>
+       Store
+    </ion-button>
+  </section>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button routerLink='/action-sheets' color="secondary" expand="block">
+          <ion-icon name="share-outline"></ion-icon>
+          Action Sheets
+        </ion-button>
+    </ion-col>
+      <ion-col size="6">
+        <ion-button routerLink='/alerts' color="danger" expand="block" >
+          <ion-icon name="alert-circle-outline"></ion-icon>
+          Alerts
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
+
+<style>
+section {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+section ion-button{
+  margin-right: 1em;
+  margin-left: 1em;
+}
+</style>
+
+

@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'action-sheets',
     loadChildren: () => import('./pages/action-sheets/action-sheets.module').then( m => m.ActionSheetsPageModule)
   },
+  {
+    path: 'store',
+    loadChildren: () => import('./pages/store/store.module').then( m => m.StorePageModule)
+  },
 ];
 
 @NgModule({
